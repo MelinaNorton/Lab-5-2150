@@ -1,11 +1,11 @@
 /**
  *
  *
- * @defines
+ * @defines: commonName, species, genus, finCount
  *
- * @constraints
+ * @constraints: 0 < finCount
  *
- * @initialization_ensures
+ * @initialization_ensures: a fish object with members initialized by parameters
  */
 public interface IFish extends IAnimal
 {
