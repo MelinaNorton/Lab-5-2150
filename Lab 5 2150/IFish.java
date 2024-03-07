@@ -1,7 +1,7 @@
 /**
  *
  *
- * @defines: commonName, species, genus, finCount
+ * @defines: finCount
  *
  * @constraints: 0 < finCount
  *
