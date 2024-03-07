@@ -5,7 +5,7 @@
  * of the animal from IAnimal.java for the common name, genus, and species but it is getting
  * the leg count from IMammal.java.
  *
- * @invariant 0 < |commonName| AND 0 < |genus| AND 0 < |species| AND 0 < legCount
+ * @invariant commonName != null AND genus != null AND species != null AND 0 < legCount
  *
  *
  * @corresponds common_ name = commonName AND genus = genus AND species = species
@@ -28,7 +28,7 @@ public class Mammal implements IMammal{
      * @param aSpecies a string, the species of the mammal
      * @param aLegCount an int, the leg count of the mammal
      *
-     * @pre 0 < |aCommonName| AND 0 < |Genus| AND 0 < |Species| AND 0 < aLegCount
+     * @pre aCommonName != null AND aGenus != null AND aSpecies != null AND 0 < aLegCount
      *
      * @post commonName = #aCommonName AND genus = #aGenus AND species = #aSpecies
      * AND legCount = #alegCount

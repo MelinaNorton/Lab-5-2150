@@ -5,7 +5,7 @@
  * of the animal from IAnimal.java for the common name, genus, and species but it is getting
  * the fin count from IFish.java.
  *
- * @invariant 0 < |commonName| AND 0 < |genus| AND 0 < |species| AND 0 < finCount
+ * @invariant commonName != null AND genus != null AND species != null AND 0 < legCount
  *
  * @corresponds  common_ name = commonName AND genus = genus AND species = species
  * AND fin_count = finCount
@@ -27,7 +27,7 @@ public class Fish implements IFish {
      * @param aSpecies a string, the species of the fish
      * @param aFinCount an int, the fin count of the fish
      *
-     * @pre 0 < |aCommonName| AND 0 < |Genus| AND 0 < |Species| AND 0 < aFinCount
+     * @pre aCommonName != null AND aGenus != null AND  aSpecies != null AND 0 < aFinCount
      *
      * @post commonName = #aCommonName AND genus = #aGenus AND species = #aSpecies
      * AND finCount = #aFinCount
