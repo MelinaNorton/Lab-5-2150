@@ -1,9 +1,14 @@
 
 /**
+ * This will create the name, genus, species, and the fin count for the fish which will be used
+ * to get and return these descriptions. This inheritance structure is getting the description
+ * of the animal from IAnimal.java for the common name, genus, and species but it is getting
+ * the fin count from IFish.java.
  *
- * @invariant
+ * @invariant 0 < |commonName| AND 0 < |genus| AND 0 < |species| AND 0 < finCount
  *
- * @corresponds
+ * @corresponds  common_ name = commonName AND genus = genus AND species = species
+ * AND fin_count = finCount
  *
  */
 public class Fish implements IFish {
@@ -14,8 +19,18 @@ public class Fish implements IFish {
     private int finCount;
 
     /**
+     * This constructor will use commonName, genus, species, and finCount to create the
+     * instance of the class and assign values to the object's members.
      *
+     * @param aCommonName a string, the common name of the fish
+     * @param aGenus a string, the genus of the fish
+     * @param aSpecies a string, the species of the fish
+     * @param aFinCount an int, the fin count of the fish
      *
+     * @pre 0 < |aCommonName| AND 0 < |Genus| AND 0 < |Species| AND 0 < aFinCount
+     *
+     * @post commonName = #aCommonName AND genus = #aGenus AND species = #aSpecies
+     * AND finCount = #aFinCount
      */
     public Fish(String aCommonName, String aGenus, String aSpecies, int aFinCount)
     {

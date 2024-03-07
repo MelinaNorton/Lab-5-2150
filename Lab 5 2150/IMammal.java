@@ -1,11 +1,11 @@
 /**
  *
  *
- * @defines: legCount
+ * @defines: legCount, this is the leg count for mammal
  *
  * @constraints: 0 < legCount
  *
- * @initialization_ensures: a memmal object initialized with parameters
+ * @initialization_ensures: a mammal object initialized with parameters
  */
 public interface IMammal extends IAnimal
 {

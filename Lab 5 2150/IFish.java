@@ -1,7 +1,7 @@
 /**
  *
  *
- * @defines: finCount
+ * @defines: finCount, this is a fin count for fish
  *
  * @constraints: 0 < finCount
  *
