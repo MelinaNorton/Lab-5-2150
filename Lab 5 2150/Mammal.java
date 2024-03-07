@@ -20,13 +20,13 @@ public class Mammal implements IMammal{
     private int legCount;
 
     /**
-     * This constructor will use commonName, genus, species, and finCount to create the
+     * This constructor will use commonName, genus, species, and legCount to create the
      * instance of the class and assign values to the object's members.
      *
-     * @param aCommonName a string, the common name of the fish
-     * @param aGenus a string, the genus of the fish
-     * @param aSpecies a string, the species of the fish
-     * @param aLegCount an int, the fin count of the fish
+     * @param aCommonName a string, the common name of the mammal
+     * @param aGenus a string, the genus of the mammal
+     * @param aSpecies a string, the species of the mammal
+     * @param aLegCount an int, the leg count of the mammal
      *
      * @pre 0 < |aCommonName| AND 0 < |Genus| AND 0 < |Species| AND 0 < aLegCount
      *
