@@ -19,6 +19,25 @@ public class AnimalDriver {
 
         //Do not change anything above this line------------------------------------------------------------------------
 
+        for (IAnimal animal : myAnimals){
+            System.out.println(animal.getDescription());
+        }
+
+        int totalFins = 0;
+        int totalLegs = 0;
+
+        for (IAnimal animal : myAnimals) {
+            if (animal instanceof IFish) {
+                IFish fish = (IFish) animal;
+                totalFins += fish.getFinCount();
+            } else if (animal instanceof IMammal) {
+                IMammal mammal = (IMammal) animal;
+                totalLegs += mammal.getLegCount();
+            }
+        }
+
+        System.out.println("Total number of fins: " + totalFins);
+        System.out.println("Total number of legs: " + totalLegs);
 
 
     }
