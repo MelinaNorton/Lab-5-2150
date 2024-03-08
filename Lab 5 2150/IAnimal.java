@@ -17,6 +17,8 @@ public interface IAnimal
  * Returns the common name of the animal.
  *
  * @return the common name of the animal, which is not null or empty.
+ * @pre none
+ * @post getCommonName = commonName
  */
     public String getCommonName();
 
@@ -24,7 +26,9 @@ public interface IAnimal
  * Returns the genus part of the scientific name of the animal.
  *
  * @return a non-null, non-empty String representing the genus of the animal, capitalized according to
- *         scientific naming conventions.
+ * scientific naming conventions.
+ * @pre none
+ * @post getGenus = genus
  */
     public String getGenus();
 
@@ -32,7 +36,9 @@ public interface IAnimal
  * Returns the species part of the scientific name of the animal.
  *
  * @return a non-null, non-empty String representing the species of the animal, in lowercase according to
- *         scientific naming conventions.
+ * scientific naming conventions.
+ * @pre none
+ * @post getSpecies = species
  */
     public String getSpecies();
 
@@ -41,6 +47,8 @@ public interface IAnimal
  * This method showcases how default methods can be utilized in interfaces to provide common functionality across all implementing classes.
  *
  * @return a String that combines the animal's common name and its scientific name (genus capitalized, species lowercase), facilitating easy and consistent identification.
+ * @pre none
+ * @post getDescription = commonName AND getDescription = genus AND getDescription = species AND getDescription = species
  */
     public default String getDescription(){
         String properGenusFormatting = getGenus().substring(0,1).toUpperCase() + getGenus().substring(1).toLowerCase();
