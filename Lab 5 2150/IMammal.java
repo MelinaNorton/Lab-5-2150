@@ -10,7 +10,7 @@
 public interface IMammal extends IAnimal
 {
     /**
-     * standard getter for fin count
+     * standard getter for leg count
      * @pre none
      * @post getLegCount = legCount
      */
