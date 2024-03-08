@@ -29,8 +29,8 @@ public class Fish implements IFish {
      *
      * @pre aCommonName != null AND aGenus != null AND  aSpecies != null AND 0 < aFinCount
      *
-     * @post commonName = #aCommonName AND genus = #aGenus AND species = #aSpecies
-     * AND finCount = #aFinCount
+     * @post commonName = aCommonName AND genus = aGenus AND species = aSpecies
+     * AND finCount = aFinCount
      */
     public Fish(String aCommonName, String aGenus, String aSpecies, int aFinCount)
     {

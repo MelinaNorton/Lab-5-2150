@@ -30,8 +30,8 @@ public class Mammal implements IMammal{
      *
      * @pre aCommonName != null AND aGenus != null AND aSpecies != null AND 0 < aLegCount
      *
-     * @post commonName = #aCommonName AND genus = #aGenus AND species = #aSpecies
-     * AND legCount = #alegCount
+     * @post commonName = aCommonName AND genus = aGenus AND species = aSpecies
+     * AND legCount = alegCount
      *
      */
     public Mammal(String aCommonName, String aGenus, String aSpecies, int aLegCount)

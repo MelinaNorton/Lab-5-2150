@@ -10,7 +10,9 @@
 public interface IFish extends IAnimal
 {
     /**
-     *
+     * standard getter for fin count
+     * @pre none
+     * @post getFinCount = finCount
      */
     public int getFinCount();
 }
